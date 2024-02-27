@@ -7,3 +7,7 @@ git status - apresenta o status do repositório local
 git add <arquivo> - adiciona o arquivo modificado ou não rastreado(tracked) para o próximo commit
 
 git add . - adiciona todos os arquivos modificados ou não rastreados do diretório atual
+
+git config --global --unset user.name - remove o username dado ao git
+
+git config --global --unset user.email - remove o email dado ao git
