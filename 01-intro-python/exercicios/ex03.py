@@ -10,9 +10,13 @@ valor_compra = float(input("Digite o valor da compra: "))
 
 if valor_compra >= 0.01 and valor_compra <= 9.99:
     print ("Valor da compra com desconto: ", valor_compra)
+    print ("Desconto aplicado: 0%")
 elif valor_compra >= 10.00 and valor_compra <= 99.99:
     print ("Valor da compra com desconto: ", valor_compra - (valor_compra * 0.05))
+    print ("Desconto aplicado: 5%")
 elif valor_compra >= 100 and valor_compra <= 499.99:
     print ("Valor da compra com desconto: ", valor_compra - (valor_compra * 0.10))
+    print ("Desconto aplicado: 10%")
 else:
     print ("Valor da compra com desconto: ", valor_compra - (valor_compra * 0.15))
+    print ("Desconto aplicado: 15%")
