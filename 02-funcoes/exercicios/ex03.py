@@ -1,21 +1,21 @@
-i = 0
-j = 0
+vogais = 0
+consoantes = 0
 
-def aLetraEh(frase):
-    global i
-    global j
+def separaVogalConsoante(frase):
+    global vogais
+    global consoantes
     for letra in frase:
         if(letra.isalpha()):
             letra = letra.capitalize()
             if(letra == "A" or letra == "E" or letra == "I" or letra == "O" or letra == "U"):
-                i = i + 1
+                vogais += 1
             else:
-                j = j + 1
+                consoantes += 1
             
 frase = input("Digite uma frase: ")
 frase = frase.strip()
 
-aLetraEh(frase)
+separaVogalConsoante(frase)
 
-print("Quantidade de vogais = %d" % (i))
-print("Quantidade de consoantes = %d" % (j))
+print("Quantidade de vogais = ", vogais)
+print("Quantidade de consoantes = ", consoantes)
